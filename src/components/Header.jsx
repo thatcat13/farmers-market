@@ -7,7 +7,7 @@ function Header(props){
     display: 'flex',
     justifyContent: 'space-between',
     border: 'solid gray',
-    backgroundColor: 'darkgray'
+    backgroundColor: 'honeydew'
   }
   return (
     <div style={headerStyle}>

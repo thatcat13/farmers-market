@@ -271,6 +271,7 @@ const masterProductList = [
 ]
 
 function ProductList(props){
+
   const productListStyle = {
     backgroundColor: "lightgrey",
     width: '45%'
@@ -279,7 +280,7 @@ function ProductList(props){
     <div style={productListStyle}>
       {masterProductList.map((product, index) =>
         <Product month={product.month}
-          selection={product.selection[2]}
+          selection={product.selection}
           key={index}/>
       )}
     </div>

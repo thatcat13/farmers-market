@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Header";
 import Body from "./Body";
-// import { Switch, Route } from 'react-router-dom';
+import ProductList from "./ProductList";
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
@@ -12,8 +13,10 @@ function App(){
           }
         `}</style>
       <Header/>
-
-      <Body />
+      <Switch>
+        <Route exact path='/' component={Body} />
+        <Route path='/productlist' component={ProductList} />
+      </Switch>
     </div>
   );
 }

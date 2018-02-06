@@ -5,7 +5,11 @@ function Product(props){
   return (
     <div>
       <h3>{props.month}</h3>
-      <p><em>{props.selection}</em></p>
+      <ul>
+        {props.selection.map((selection, index) =>
+          <li key={index}>{selection}</li>  
+        )}
+      </ul>
       <hr/>
     </div>
   );
@@ -13,7 +17,7 @@ function Product(props){
 
 Product.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.string
+  selection: PropTypes.array
 };
 
 export default Product;
