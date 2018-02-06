@@ -2,12 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function Product(props){
+  const productListStyle = {
+    listStyle: 'none'
+  }
   return (
     <div>
       <h3>{props.month}</h3>
-      <ul>
+      <ul style={productListStyle}>
         {props.selection.map((selection, index) =>
-          <li key={index}>{selection}</li>  
+          <li key={index}>{selection}</li>
         )}
       </ul>
       <hr/>

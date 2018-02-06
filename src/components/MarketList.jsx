@@ -42,8 +42,7 @@ const masterMarketList = [
 
 function MarketList(props){
   const marketListStyle = {
-    backgroundColor: "lightblue",
-    width: '45%'
+
   }
   return (
     <div style={marketListStyle}>

@@ -6,7 +6,6 @@ function Header(props){
   const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    border: 'solid gray',
     backgroundColor: 'honeydew'
   }
   return (

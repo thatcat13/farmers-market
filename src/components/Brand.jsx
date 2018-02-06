@@ -1,5 +1,6 @@
 import React from "react";
 import logo from './../assets/images/logo.png';
+import { Link } from 'react-router-dom';
 
 function Brand(){
   const logoStyle = {
@@ -8,7 +9,7 @@ function Brand(){
   }
   return (
     <div>
-      <img style={logoStyle} src={logo}/>
+      <Link to="/"><img style={logoStyle} src={logo}/></Link>
     </div>
   );
 }

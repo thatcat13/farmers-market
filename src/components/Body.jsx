@@ -1,16 +1,18 @@
 import React from "react";
 import MarketList from "./MarketList";
-import ProductList from "./ProductList"
+import ProductList from "./ProductList";
+import Hero from "./Hero";
+import About from "./About";
 
 function Body(props){
-  var bodyStyle = {
+  const bodyStyle = {
     display: 'flex',
-    justifyContent: 'space-between',
+    flexDirection: 'column'
   }
   return (
-    <div style={bodyStyle}>
-      <ProductList />
-      <MarketList />
+    <div>
+      <Hero />
+      <About />
     </div>
   );
 }
