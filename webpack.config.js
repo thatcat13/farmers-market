@@ -32,12 +32,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|gif|jp(e*)g|svg)$/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 8192
+              limit: 8000,
+              name: 'images/[hash]-[name].[ext]'
             }
           }
         ]
@@ -52,15 +53,7 @@ module.exports = {
           configFile: "./.eslintrc.json"
           }
         },
-        {
-          test: /\.(png|jpg|gif)$/,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {}
-            }
-          ]
-        },
+        
         {
         test: /\.jsx?$/,
         loader: "babel-loader",

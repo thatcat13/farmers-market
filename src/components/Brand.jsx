@@ -1,8 +1,15 @@
 import React from "react";
+import logo from './../assets/images/logo.png';
 
 function Brand(){
+  const logoStyle = {
+    width: 200,
+    height: 200
+  }
   return (
-    <img src='https://www.cdc.gov/features/foodsafetyquiz/index.html'></img>
+    <div>
+      <img style={logoStyle} src={logo}/>
+    </div>
   );
 }
 

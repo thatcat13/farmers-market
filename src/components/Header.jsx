@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import Brand from "./Brand";
 
 function Header(props){
-  var headerStyle = {
+  const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
     border: 'solid gray',

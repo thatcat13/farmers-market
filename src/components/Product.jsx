@@ -13,7 +13,7 @@ function Product(props){
 
 Product.propTypes = {
   month: PropTypes.string,
-  selection: PropTypes.array
+  selection: PropTypes.string
 };
 
 export default Product;
