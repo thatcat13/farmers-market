@@ -7,13 +7,17 @@ function Header(props){
     display: 'flex',
     justifyContent: 'space-between',
     backgroundColor: 'honeydew',
-    fontFamily: 'fantasy'
+  }
+
+  const siteHeader = {
+    fontSize: '3em',
+    paddingTop: 40
   }
   return (
     <div style={headerStyle}>
       <Brand/>
         <div>
-          <h1>Avery Organics</h1>
+          <h1 style={siteHeader}>Avery Organics</h1>
         </div>
       <Nav/>
     </div>
