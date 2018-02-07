@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 
 function Product(props){
   const productListStyle = {
-    listStyle: 'none'
+    listStyle: 'none',
+    padding: 0
   }
   return (
     <div>

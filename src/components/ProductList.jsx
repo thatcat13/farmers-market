@@ -273,16 +273,29 @@ const masterProductList = [
 function ProductList(props){
 
   const productListStyle = {
-    backgroundColor: "lightgrey",
-    width: '45%'
+    backgroundColor: '#ffead1',
+    textAlign: 'center',
+    width: '50vw',
+    padding: 9,
+    borderRadius: 10,
+    boxShadow: '0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)'
+  }
+
+  const productPageStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: 20
   }
   return (
-    <div style={productListStyle}>
-      {masterProductList.map((product, index) =>
-        <Product month={product.month}
-          selection={product.selection}
-          key={index}/>
-      )}
+    <div style={productPageStyle}>
+      <div style={productListStyle}>
+        <h1>Produce Availability</h1>
+        {masterProductList.map((product, index) =>
+          <Product month={product.month}
+            selection={product.selection}
+            key={index}/>
+        )}
+      </div>
     </div>
   );
 }

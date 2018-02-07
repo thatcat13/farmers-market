@@ -22,14 +22,19 @@ function Nav(props){
     marginRight: 20,
     marginLeft: 20,
     fontSize: 25,
-    textDecoration: 'none'
   }
+
+  const linkItemStyles = {
+    textDecoration: 'none',
+    color: 'black'
+  }
+
 
   return (
     <div style={navContainerStyles}>
       <ul style={navStyles}>
-        <li style={navItemStyles}><Link to="/marketlist" style={{ textDecoration: 'none' }}>Markets</Link></li>
-        <li style={navItemStyles}><Link to="/productlist" style={{ textDecoration: 'none' }}>Products</Link></li>
+        <li style={navItemStyles}><Link to="/marketlist" style={linkItemStyles}>Markets</Link></li>
+        <li style={navItemStyles}><Link to="/productlist" style={linkItemStyles}>Products</Link></li>
       </ul>
     </div>
   );

@@ -6,11 +6,15 @@ function Header(props){
   const headerStyle = {
     display: 'flex',
     justifyContent: 'space-between',
-    backgroundColor: 'honeydew'
+    backgroundColor: 'honeydew',
+    fontFamily: 'fantasy'
   }
   return (
     <div style={headerStyle}>
       <Brand/>
+        <div>
+          <h1>Avery Organics</h1>
+        </div>
       <Nav/>
     </div>
   );
